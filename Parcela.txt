@@ -1,0 +1,131 @@
+Harvest a Field
+# first street, first avenue, num streets, num avenues showing 
+0 0 20 20
+# intersection size (in pixels) 
+38
+# things
+   
+
+# wall
+   becker.robots.Wall 0 0 Direction.NORTH
+   becker.robots.Wall 0 0 Direction.WEST
+   becker.robots.Wall 1 0 Direction.WEST
+   becker.robots.Wall 2 0 Direction.WEST
+   becker.robots.Wall 3 0 Direction.WEST
+   becker.robots.Wall 4 0 Direction.WEST
+   becker.robots.Wall 5 0 Direction.WEST
+   becker.robots.Wall 6 0 Direction.WEST
+   becker.robots.Wall 7 0 Direction.WEST
+   becker.robots.Wall 8 0 Direction.WEST
+   becker.robots.Wall 9 0 Direction.WEST
+   becker.robots.Wall 10 0 Direction.WEST
+   becker.robots.Wall 11 0 Direction.WEST
+   becker.robots.Wall 12 0 Direction.WEST
+   becker.robots.Wall 13 0 Direction.WEST
+   becker.robots.Wall 14 0 Direction.WEST
+   becker.robots.Wall 15 0 Direction.WEST
+   becker.robots.Wall 16 0 Direction.WEST
+   becker.robots.Wall 17 0 Direction.WEST
+   becker.robots.Wall 18 0 Direction.WEST
+   becker.robots.Wall 18 0 Direction.SOUTH
+   becker.robots.Wall 18 0 Direction.SOUTH
+   becker.robots.Wall 18 1 Direction.SOUTH
+   becker.robots.Wall 18 2 Direction.SOUTH
+   becker.robots.Wall 18 3 Direction.SOUTH
+   becker.robots.Wall 18 4 Direction.SOUTH
+   becker.robots.Wall 18 5 Direction.SOUTH
+   becker.robots.Wall 18 6 Direction.SOUTH
+   becker.robots.Wall 18 7 Direction.SOUTH
+   becker.robots.Wall 18 8 Direction.SOUTH
+   becker.robots.Wall 18 9 Direction.SOUTH
+   becker.robots.Wall 18 10 Direction.SOUTH
+   becker.robots.Wall 18 11 Direction.SOUTH
+   becker.robots.Wall 18 12 Direction.SOUTH
+   becker.robots.Wall 18 13 Direction.SOUTH
+   becker.robots.Wall 18 14 Direction.SOUTH
+   becker.robots.Wall 18 15 Direction.SOUTH
+   becker.robots.Wall 18 16 Direction.SOUTH
+   becker.robots.Wall 18 17 Direction.SOUTH
+   becker.robots.Wall 18 18 Direction.SOUTH
+   becker.robots.Wall 18 19 Direction.SOUTH
+   becker.robots.Wall 18 19 Direction.EAST
+   becker.robots.Wall 17 19 Direction.EAST
+   becker.robots.Wall 16 19 Direction.EAST
+   becker.robots.Wall 15 19 Direction.EAST
+   becker.robots.Wall 14 19 Direction.EAST
+   becker.robots.Wall 13 19 Direction.EAST
+   becker.robots.Wall 12 19 Direction.EAST
+   becker.robots.Wall 11 19 Direction.EAST
+   becker.robots.Wall 10 19 Direction.EAST
+   becker.robots.Wall 9 19 Direction.EAST
+   becker.robots.Wall 8 19 Direction.EAST
+   becker.robots.Wall 7 19 Direction.EAST
+   becker.robots.Wall 6 19 Direction.EAST
+   becker.robots.Wall 5 19 Direction.EAST
+   becker.robots.Wall 4 19 Direction.EAST
+   becker.robots.Wall 3 19 Direction.EAST
+   becker.robots.Wall 2 19 Direction.EAST
+   becker.robots.Wall 1 19 Direction.EAST
+   becker.robots.Wall 0 19 Direction.EAST
+   becker.robots.Wall 0 19 Direction.NORTH
+   becker.robots.Wall 0 19 Direction.NORTH
+   becker.robots.Wall 0 18 Direction.NORTH
+   becker.robots.Wall 0 17 Direction.NORTH
+   becker.robots.Wall 0 16 Direction.NORTH
+   becker.robots.Wall 0 15 Direction.NORTH
+   becker.robots.Wall 0 14 Direction.NORTH
+   becker.robots.Wall 0 13 Direction.NORTH
+   becker.robots.Wall 0 12 Direction.NORTH
+   becker.robots.Wall 0 11 Direction.NORTH
+   becker.robots.Wall 0 10 Direction.NORTH
+   becker.robots.Wall 0 9 Direction.NORTH
+   becker.robots.Wall 0 8 Direction.NORTH
+   becker.robots.Wall 0 7 Direction.NORTH
+   becker.robots.Wall 0 6 Direction.NORTH
+   becker.robots.Wall 0 5 Direction.NORTH
+   becker.robots.Wall 0 4 Direction.NORTH
+   becker.robots.Wall 0 3 Direction.NORTH
+   becker.robots.Wall 0 2 Direction.NORTH
+   becker.robots.Wall 0 1 Direction.NORTH
+   becker.robots.Wall 0 11 Direction.EAST
+   becker.robots.Wall 1 11 Direction.EAST
+   becker.robots.Wall 2 11 Direction.EAST
+   becker.robots.Wall 3 11 Direction.EAST
+   becker.robots.Wall 4 11 Direction.EAST
+   becker.robots.Wall 6 11 Direction.EAST
+   becker.robots.Wall 7 11 Direction.EAST
+   becker.robots.Wall 8 11 Direction.EAST
+   becker.robots.Wall 9 11 Direction.EAST
+   becker.robots.Wall 10 11 Direction.EAST
+   becker.robots.Wall 11 11 Direction.EAST
+   becker.robots.Wall 13 11 Direction.EAST
+   becker.robots.Wall 14 11 Direction.EAST
+   becker.robots.Wall 15 11 Direction.EAST
+   becker.robots.Wall 16 11 Direction.EAST
+   becker.robots.Wall 17 11 Direction.EAST
+   becker.robots.Wall 18 11 Direction.EAST
+   becker.robots.Wall 9 0 Direction.SOUTH
+   becker.robots.Wall 9 1 Direction.SOUTH
+   becker.robots.Wall 9 2 Direction.SOUTH
+   becker.robots.Wall 9 3 Direction.SOUTH
+   becker.robots.Wall 9 4 Direction.SOUTH
+   becker.robots.Wall 9 5 Direction.SOUTH
+   becker.robots.Wall 9 6 Direction.SOUTH
+   becker.robots.Wall 9 7 Direction.SOUTH
+   becker.robots.Wall 9 8 Direction.SOUTH
+   becker.robots.Wall 9 9 Direction.SOUTH
+   becker.robots.Wall 9 10 Direction.SOUTH
+   becker.robots.Wall 9 11 Direction.SOUTH
+   becker.robots.Wall 15 12 Direction.NORTH
+   becker.robots.Wall 15 13 Direction.NORTH
+   becker.robots.Wall 15 14 Direction.NORTH
+   becker.robots.Wall 15 15 Direction.NORTH
+   becker.robots.Wall 15 17 Direction.NORTH
+   becker.robots.Wall 15 18 Direction.NORTH
+   becker.robots.Wall 15 19 Direction.NORTH
+
+   
+   
+   
+
+
