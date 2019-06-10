@@ -18,12 +18,19 @@ public class Main {
         Parcela parcela = new Parcela("Parcela.txt");
         Granjero granjero = new Granjero(parcela.getParcela(),17,16, Direction.NORTH);
         TorredeInformación torre = new TorredeInformación();
-        torre.vacasparcela1(parcela.getParcela());
-        torre.vacasparcela2(parcela.getParcela());
-        torre.vacasparcela3(parcela.getParcela());
+        System.out.println("Ingrese cantidad de vacas de la parcela 1");
+        int p1 = s.nextInt();
+        System.out.println("Ingrese cantidad de vacas de la parcela 2");
+        int p2 = s.nextInt();
+        System.out.println("Ingrese cantidad de vacas de la parcela 3");
+        int p3 = s.nextInt();
+        torre.vacasparcela1(parcela.getParcela(),p1);
+        torre.vacasparcela2(parcela.getParcela(),p2);
+        torre.vacasparcela3(parcela.getParcela(),p3);
         
         int contador = 0;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 20; i++) {
+            System.out.println("CICLO DE SIMULACIÓN NÚMERO "+(i+1));
             if(contador == 0){
                 torre.cicloMovimiento1();
             }if(contador == 1){
@@ -41,32 +48,16 @@ public class Main {
             contador++;
             
             torre.nuevosDatos();
+            torre.enfermarVacas();
+            torre.embarazarVacas();
             
-            
-            for (int j = 0; j < 10; j++) {
-                if((torre.getVacasparcela1().get(j).getPulso()<47.3&&torre.getVacasparcela1().get(i).getPulso()>56.5)||
-                   (torre.getVacasparcela1().get(j).getRitmo()<42.8&&torre.getVacasparcela1().get(j).getRitmo()>58)||
-                   (torre.getVacasparcela1().get(j).getTemperatura()<37.4&&torre.getVacasparcela1().get(j).getTemperatura()>38.6)){
-                    torre.getVacasparcela1().get(j).getRobot().setColor(Color.RED);
-            }
-                if((torre.getVacasparcela2().get(j).getPulso()<47.3&&torre.getVacasparcela1().get(i).getPulso()>56.5)||
-                   (torre.getVacasparcela2().get(j).getRitmo()<42.8&&torre.getVacasparcela1().get(j).getRitmo()>58)||
-                   (torre.getVacasparcela2().get(j).getTemperatura()<37.4&&torre.getVacasparcela1().get(j).getTemperatura()>38.6)){
-                    torre.getVacasparcela2().get(j).getRobot().setColor(Color.RED);
-            }
-                if((torre.getVacasparcela3().get(j).getPulso()<47.3&&torre.getVacasparcela1().get(i).getPulso()>56.5)||
-                   (torre.getVacasparcela3().get(j).getRitmo()<42.8&&torre.getVacasparcela1().get(j).getRitmo()>58)||
-                   (torre.getVacasparcela3().get(j).getTemperatura()<37.4&&torre.getVacasparcela1().get(j).getTemperatura()>38.6)){
-                    torre.getVacasparcela3().get(j).getRobot().setColor(Color.RED);
-            }
-            }
             granjero.irAVacas1(torre.getVacasparcela1());
             granjero.irAVacas2(torre.getVacasparcela2());
             granjero.irAVacas3(torre.getVacasparcela3());
+            torre.sumarCiclos(parcela.getParcela());
             
             System.out.println("Desea ordeñar lote?   para SI prima 1, para NO oprima 0");
             int o = s.nextInt();
-            
             if (o == 1) {
                 System.out.println("que lote desea ordeñar: 1, 2 o 3?");
                 int l = s.nextInt();
@@ -79,6 +70,17 @@ public class Main {
                 }
             }
             
+            torre.impValores(torre.getVacasparcela1(),1);
+            torre.impValores(torre.getVacasparcela2(),2);
+            torre.impValores(torre.getVacasparcela3(),3);
+            
+            torre.lecheALaVenta();
+            System.out.println("DESEA CONTINUAR CON LA SIMULACIÓN?");
+            System.out.println("oprima 1 para SI ó 0 para NO");
+            int ds = s.nextInt();
+            if (ds==0) {
+                System.exit(0);
+            }
         }
         
     }

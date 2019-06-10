@@ -16,8 +16,9 @@ public class Vaca {
     private double ritmo;
     private double temperatura;
     private double pulso;
-    private boolean vivo;
-    public int leche;
+    private int leche;
+    private int cicloDeGestación;
+    
     
     public Vaca(City city,int x,int y,Direction drctn, double ritmo,double temperatura,double pulso) {
         this.vaca=new Robot(city,x,y,drctn);
@@ -25,7 +26,8 @@ public class Vaca {
         this.pulso = pulso;
         this.temperatura = temperatura;
         this.ritmo = ritmo;
-        this.vivo = true;
+        this.cicloDeGestación = 0;
+        
     }
     
     
@@ -129,6 +131,8 @@ public class Vaca {
         }
             }
     }
+    
+    
 
     public int getLeche() {
         return leche;
@@ -137,6 +141,15 @@ public class Vaca {
     public void setLeche(int leche) {
         this.leche = leche;
     }
+
+    public int getCicloDeGestación() {
+        return cicloDeGestación;
+    }
+
+    public void setCicloDeGestación(int cicloDeGestación) {
+        this.cicloDeGestación = cicloDeGestación;
+    }
+    
     
     
     
